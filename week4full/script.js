@@ -1,21 +1,21 @@
-var names=new Array();
-names[0]="Yaakov";
-names[1]="John";
-names[2]="Jen";
-names[3]="jason";
-names[4]="paul";
-names[5]="frank";
-names[6]="larry";
-names[7]="paula";
-names[8]="laura";
-names[9]="jim";
+// IIFE to create function that displays "Good Bye" + " " + "name" for names that begin with J and 
+// "Hello" + " " + "name" for names that begin with other letters
 
+//IIFE
+(function(){
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-for (var i = 0; i < names.length; i++) {
-	if(names[i].charAt(0)==='J'|| names[i].charAt(0)==='j'){
-        console.log("Goodbye "+ names[i])
-	}
-	else{
-		console.log("Hello "+ names[i])
-	}
-}
+  //loop through all the names
+  for (var indx in names) {
+    //select lowercase of firt letter from name array
+    var firstLetter = names[m].charAt(0).toLowerCase(); 
+
+    //call byeSpeaker for letters that begin with "j" else call helloSpeaker
+    if (firstLetter === 'j') {
+      bye.speak(names[m]);
+    } else {
+      hello.speak(names[m]);
+    }
+  }
+
+})();
