@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onmouse_move</title>
+	<script type="text/javascript">
+		function clearc()
+		{
+			document.getElementById('p1').innerHTML='';}
+			function fun(e)
+			{
+				var x=e.clientX;
+				var y=e.clientY;
+				var cord='('+x+','+y+')';
+				document.getElementById('p1').innerHTML=cord;}
+			
+		
+	</script>
+</head>
+<body>
+	<div style="width: 300px;height: 300px ;border:2px solid red"
+	onmousemove='fun(event)' onmouseout='clearc()'></div>
+	<p id='p1'></p>
+
+</body>
+</html>

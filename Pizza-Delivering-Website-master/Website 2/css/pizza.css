@@ -1,0 +1,42 @@
+header{
+  background-image: url('bg 2.jpg');
+}
+.card {
+  
+  
+  /*margin: auto;*/
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Flamenco', cursive;
+  float: left;
+  width: 25%;
+  padding:5px;
+
+}
+ 
+
+.price {
+  color: #00FA9A;
+  font-size: 32px;
+  font-family: 'Flamenco', cursive;
+  
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:#1E90FF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 28px;
+  font-family: 'Flamenco', cursive;
+  
+}
+
+.card button:hover {
+  opacity: 0.7;
+  transition: 0.6s;
+}

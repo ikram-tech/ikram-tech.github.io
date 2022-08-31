@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img onmouseenter="something(this)" onmouseleave="something2(this)" src="smiley.gif" a width="32" height="32">
+
+<p>The function bigImg() is triggered when the user moves the mouse pointer onto the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+
+<script type="text/javascript">
+	function something(x)
+	{
+		x.style.height="64px";
+		x.style.width="64px";
+
+	}
+	function something2(x)
+	{
+		x.style.height = "32px";
+		x.style.width = "32px";
+
+	}
+</script>
+
+</body>
+</html>
